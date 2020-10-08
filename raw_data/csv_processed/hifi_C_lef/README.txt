@@ -1,0 +1,1 @@
+These files may need further editing to be of the same format produced by the original C file as in the C file they are subtracted from by their respective coefficients in a way I havent yet understood
