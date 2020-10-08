@@ -127,3 +127,18 @@ delta_Cn_beta_values_table = np.load(path_1D + 'delta_Cn_beta_values_table.npy')
 delta_Cn_beta_points_table = np.load(path_1D + 'delta_Cn_beta_points_table.npy', allow_pickle=True)
 delta_Cl_beta_values_table = np.load(path_1D + 'delta_Cl_beta_values_table.npy')
 delta_Cl_beta_points_table = np.load(path_1D + 'delta_Cl_beta_points_table.npy', allow_pickle=True)
+
+# In[testing]
+
+from scipy.interpolate import interp1d
+
+points = Cyp_points_table
+values = Cyp_values_table
+
+values = np.reshape(values,[111])
+
+f = interp1d(points, values)
+
+point = (5)
+
+print(f(point))
